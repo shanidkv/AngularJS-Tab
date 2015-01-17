@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html ng-app="shanidkvApp">
+	<head>
+		<!--[if IE]>
+	      	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	      <![endif]-->
+	    <title>Shanid KV | AngularJS Tab</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body>
+
+		<div class="container">
+
+			<div class="row">
+
+				<h3>AngularJS Tab</h3>
+
+				<hr/>
+				
+				<div ng-init="tab=1">
+					<ul class="nav nav-tabs">
+						<li class="tab" ng-class="{active:tab==1}">
+							<a href ng-click="tab = 1">Tab 1</a>
+						</li>
+					    <li class="tab" ng-class="{active:tab==2}">
+							<a href ng-click="tab = 2">Tab 2</a>
+						</li>
+					    <li class="tab" ng-class="{active:tab==3}">
+							<a href ng-click="tab = 3">Tab 3</a>
+						</li>
+					</ul>
+				
+					<div class="tab-content tab-pane" ng-show="tab==1">
+						<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+						<ul>
+							<li>Lorem Ipsum has been the industry's standard</li>
+							<li>dummy text ever since the 1500s, when an unknown</li>
+							<li>printer took a galley of type and scrambled it to make</li>
+							<li>type specimen book. It has survived not only five centuries</li>
+							<li>but also the leap into electronic typesetting, remaining essentially</li>
+							<li>unchanged.Lorem Ipsum has been the industry's standard dummy text ever since</li>
+						</ul>
+					</div>
+					<div class="tab-content tab-pane" ng-show="tab==2">
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+						<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+						<ul>
+							<li>Lorem Ipsum has been the industry's standard</li>
+							<li>dummy text ever since the 1500s, when an unknown</li>
+							<li>printer took a galley of type and scrambled it to make</li>
+							<li>Lorem Ipsum has been the industry's standard</li>
+							<li>dummy text ever since the 1500s, when an unknown</li>
+						</ul>
+					</div>
+					<div class="tab-content tab-pane" ng-show="tab==3">
+						
+						<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+						<ul>
+							<li>Lorem Ipsum has been the industry's standard</li>
+							<li>dummy text ever since the 1500s, when an unknown</li>
+							<li>printer took a galley of type and scrambled it to make</li>
+							<li>type specimen book. It has survived not only five centuries</li>
+							<li>but also the leap into electronic typesetting, remaining essentially</li>
+							<li>unchanged.Lorem Ipsum has been the industry's standard dummy text ever since</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+
+		<div class="footer">
+	    	<div class="container">
+	        	<p class="row text-muted">Copyright &copy; <script>document.write(new Date().getFullYear())</script>, <a href="http://www.shanidkv.com/">shanidkv.com</a></p>
+	    	</div>
+	    </div>
+
+	</body>
+</html>
